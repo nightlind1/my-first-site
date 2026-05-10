@@ -1,3 +1,26 @@
+const roadmapItems = [
+  {
+    number: '01',
+    title: 'Улучшим структуру',
+    text: 'Разделим проект на отдельные файлы и сделаем код более удобным для поддержки.',
+  },
+  {
+    number: '02',
+    title: 'Добавим новые секции',
+    text: 'Сделаем блок с примерами работ, описанием проекта и понятным призывом к действию.',
+  },
+  {
+    number: '03',
+    title: 'Проверим адаптивность',
+    text: 'Убедимся, что сайт хорошо выглядит на компьютере, планшете и телефоне.',
+  },
+  {
+    number: '04',
+    title: 'Обновим сайт в интернете',
+    text: 'Сохраним изменения через Git, отправим их на GitHub и обновим сайт на Vercel.',
+  },
+]
+
 function Roadmap() {
   return (
     <section className="section" id="roadmap">
@@ -5,41 +28,13 @@ function Roadmap() {
       <h2>Что добавим дальше</h2>
 
       <div className="roadmapGrid">
-        <article className="roadmapItem">
-          <span>01</span>
-          <h3>Улучшим структуру</h3>
-          <p>
-            Разделим проект на отдельные файлы и сделаем код более удобным для
-            поддержки.
-          </p>
-        </article>
-
-        <article className="roadmapItem">
-          <span>02</span>
-          <h3>Добавим новые секции</h3>
-          <p>
-            Сделаем блок с примерами работ, описанием проекта и понятным
-            призывом к действию.
-          </p>
-        </article>
-
-        <article className="roadmapItem">
-          <span>03</span>
-          <h3>Проверим адаптивность</h3>
-          <p>
-            Убедимся, что сайт хорошо выглядит на компьютере, планшете и
-            телефоне.
-          </p>
-        </article>
-
-        <article className="roadmapItem">
-          <span>04</span>
-          <h3>Обновим сайт в интернете</h3>
-          <p>
-            Сохраним изменения через Git, отправим их на GitHub и обновим сайт
-            на Vercel.
-          </p>
-        </article>
+        {roadmapItems.map((item) => (
+          <article className="roadmapItem" key={item.number}>
+            <span>{item.number}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </article>
+        ))}
       </div>
     </section>
   )
