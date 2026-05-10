@@ -1,16 +1,35 @@
-# React + Vite
+# MyFirstSite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Первый учебный React-лендинг, созданный в рамках практики по разработке сайтов с помощью ChatGPT, VS Code, GitHub и Vercel.
 
-Currently, two official plugins are available:
+## Ссылка на сайт
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://my-first-site-ten-blond.vercel.app/
 
-## React Compiler
+## Что есть в проекте
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- Компонентная структура
+- Отдельные файлы компонентов
+- CSS-оформление
+- Адаптивная версия для мобильных экранов
+- Git и GitHub
+- Автоматический деплой через Vercel
 
-## Expanding the ESLint configuration
+## Структура проекта
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+  components/
+    Header.jsx
+    Hero.jsx
+    Features.jsx
+    Progress.jsx
+    Skills.jsx
+    Projects.jsx
+    Roadmap.jsx
+    CallToAction.jsx
+    Footer.jsx
+  App.jsx
+  App.css
+  main.jsx
