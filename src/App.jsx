@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Progress from './components/Progress'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 import Roadmap from './components/Roadmap'
 import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
@@ -17,6 +18,7 @@ function App() {
       <Features />
       <Progress />
       <Skills />
+      <Projects />
       <Roadmap />
       <CallToAction />
       <Footer />
